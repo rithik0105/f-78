@@ -1,0 +1,36 @@
+<html>>
+<head>
+ <link rel="sylesheet" href="style.css">
+</head>
+<title>Family</title>
+<body>
+<h1>Family</h1>
+<hr> <hr>
+<img id="family_img" src="https://i.pinimg.com/736x/f2/f2/01/f2f2015fe39889cd2e6bcb6a9878fd80.jpg">
+<h3 id="one"> Our Family</h3>
+<button type="button" onclick="family()">Next</button>
+<hr>
+   <script>
+     var names=[
+     " My father (Kannan)",
+     " My mother (Priya)",
+     " My grandmother(Padthmavathi)",
+     " My grandfather(Oulaganathan)",
+     ];
+     var images=[
+     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTByU58I6FojXYpzBNgPEKre0gr48Ut0REFVg&usqp=CAU",
+     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6iZjp6up4hDNYagVznTR0GFizLMFPoSmekw&usqp=CAU",
+     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRntAxBRvHWEU3xWo78YV9mdTWwEgMoGqOO5A&usqp=CAU",
+     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZfed-yGFoUuiRmKAW5lz1UzfTjX_RciFoFQ&usqp=CAU",  
+     ];
+     var i=0;
+     function family(){
+     document.getElementById("one").innerHTML=names[i];
+     document.getElementById("family_img").src=images[i];
+     i++;
+     if(i==4){
+      i=0; 
+     }}
+     </script>
+     </body>
+     </html>
